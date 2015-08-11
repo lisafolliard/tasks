@@ -1,6 +1,7 @@
 <h1>You have a busy day today</h1>
 
 <!-- Displaying inputted tasks -->
+
   <h2>Below are your tasks:</h2>
 
     <ul>
@@ -10,15 +11,17 @@
       <% end %>
     </ul>
 
-<p>Enter Your Task And Git To Work!</p>
+    <div class="well">
+      <p>Enter Your Task And Git To Work!</p>
+    </div>
 
 <!-- Our Form -->
-  <form action="/tasks" method="post">  # Added new method="post"
+  <form action="/tasks" method="post">
 
     <div class="form-group">
       <label for="description">Task Description</label>
       <input id="description" name="description" class="form-control" type="text">
   </div>
 
-  <button type="submit" class="btn btn-warning">Enter today's task!</button>
+  <button type="submit" class="btn btn-info">Enter today's task!</button>
   </form>

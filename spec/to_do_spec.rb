@@ -23,4 +23,12 @@ describe('Task') do  # class
       expect(Task.all()).to(eq([test_task]))
     end
   end
+
+  describe('.clear') do
+    it('clear the array of tasks between spec runs') do
+    Task.new('buy her new shoes').save()
+    Task.clear()
+    expect(Task.all()).to(eq([]))  # grabs the array and empties it
+    end
+  end
 end

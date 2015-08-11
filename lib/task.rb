@@ -17,7 +17,7 @@ class Task
     @@all_tasks.push(self)  # self is what we're calling the method on
   end
 
-  define_singleton_method(:clear) do # clear the array between spec runs
+  define_singleton_method(:clear) do # class method clear the array between spec runs
     @@all_tasks = []
   end
 

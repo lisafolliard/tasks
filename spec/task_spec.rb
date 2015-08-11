@@ -1,7 +1,12 @@
 require('rspec')
-require('to_do')
+require('task')
 
 describe('Task') do  # class
+
+# BEFORE
+  before() do
+    Task.clear()  # calling clear method, update our spec file to clear things out before each spec run:
+  end
 
   describe('#description') do   # instance method, like .push()
     it('lets you give it a description') do

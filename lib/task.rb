@@ -9,7 +9,7 @@ class Task
     @description
   end
 
-  define_singleton_method(:all) do
+  define_singleton_method(:all) do  # class method
     @@all_tasks
   end
 

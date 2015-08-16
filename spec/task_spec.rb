@@ -1,5 +1,4 @@
 require('rspec')
-require('pg')
 require('task')
 
 describe('Task') do  # class
